@@ -6,7 +6,8 @@
     android:paddingRight="0dp"
     android:paddingTop="0dp"
     android:paddingBottom="0dp" tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/back">
 
     <LinearLayout
         android:orientation="vertical"
@@ -17,7 +18,8 @@
         <ScrollView
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:id="@+id/scrollView" >
+            android:id="@+id/scrollView"
+            android:background="@drawable/paper">
 
             <TextView
                 android:layout_width="fill_parent"
@@ -25,7 +27,8 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Medium Text"
                 android:id="@+id/txt"
-                android:layout_margin="16dp" />
+                android:layout_margin="16dp"
+                android:textColor="#ff3c00" />
         </ScrollView>
 
     </LinearLayout>
@@ -52,42 +55,48 @@
                     android:layout_height="wrap_content"
                     android:text="New Button"
                     android:id="@+id/btt1"
-                    android:onClick="btt1_click" />
+                    android:onClick="btt1_click"
+                    android:textColor="#ff3c00" />
 
                 <Button
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:text="New Button"
                     android:id="@+id/btt2"
-                    android:onClick="btt2_click" />
+                    android:onClick="btt2_click"
+                    android:textColor="#ff3c00" />
 
                 <Button
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:text="New Button"
                     android:id="@+id/btt3"
-                    android:onClick="btt3_click" />
+                    android:onClick="btt3_click"
+                    android:textColor="#ff3c00" />
 
                 <Button
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:text="New Button"
                     android:id="@+id/btt4"
-                    android:onClick="btt4_click" />
+                    android:onClick="btt4_click"
+                    android:textColor="#ff3c00" />
 
                 <Button
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:text="New Button"
                     android:id="@+id/btt5"
-                    android:onClick="btt5_click" />
+                    android:onClick="btt5_click"
+                    android:textColor="#ff3c00" />
 
                 <Button
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:text="btt6"
                     android:id="@+id/btt6"
-                    android:onClick="btt6_click" />
+                    android:onClick="btt6_click"
+                    android:textColor="#ff3c00" />
 
             </LinearLayout>
         </ScrollView>
