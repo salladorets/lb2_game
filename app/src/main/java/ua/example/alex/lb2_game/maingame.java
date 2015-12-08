@@ -668,7 +668,7 @@ public class maingame extends AppCompatActivity {
                 break;
             case 62:
                 txt.setText("Перейдите к главе – 59");
-                btt1.setEnabled(true); btt1.setText("Перейдите к главе – 59");
+                btt1.setEnabled(true); btt1.setText("Перейдите к главе -59");
                 break;
             case 63:
                 txt.setText("Вы незаметно вынимаете один патрон из магазина и прячете его в\n" +

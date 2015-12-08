@@ -45,7 +45,8 @@
                 android:orientation="vertical"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:layout_margin="16dp">
+                android:layout_margin="16dp"
+                android:paddingBottom="10dp">
 
                 <Button
                     android:layout_width="fill_parent"
@@ -87,7 +88,8 @@
                     android:layout_height="wrap_content"
                     android:text="btt6"
                     android:id="@+id/btt6"
-                    android:onClick="btt6_click" />
+                    android:onClick="btt6_click"
+                    android:layout_marginBottom="10dp" />
 
             </LinearLayout>
         </ScrollView>
