@@ -5,12 +5,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class maingame extends AppCompatActivity {
 
     TextView txt;
     Button btt1, btt2, btt3, btt4, btt5, btt6;
+    ImageButton imgList, imgAmmo;
+    int k = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +25,10 @@ public class maingame extends AppCompatActivity {
         btt5 = (Button) findViewById(R.id.btt5);
         btt6 = (Button) findViewById(R.id.btt6);
         txt = (TextView) findViewById(R.id.txt);
+        imgAmmo = (ImageButton) findViewById(R.id.imgAmmo);
+        imgList = (ImageButton) findViewById(R.id.imgList);
+        imgAmmo.setVisibility(View.INVISIBLE);
+        imgList.setVisibility(View.INVISIBLE);
         game(1);
     }
     String[] time;
@@ -49,7 +56,10 @@ public class maingame extends AppCompatActivity {
         time = btt6.getText().toString().split("-");
         game(Integer.valueOf(time[1]));
     }
-
+    public void AmmoUse(View view){
+        imgAmmo.setVisibility(View.INVISIBLE);
+        game(k+12);
+    }
     public void game(int a) {
     btt1.setEnabled(false); btt1.setText("");
     btt2.setEnabled(false); btt2.setText("");
@@ -57,6 +67,7 @@ public class maingame extends AppCompatActivity {
     btt4.setEnabled(false); btt4.setText("");
     btt5.setEnabled(false); btt5.setText("");
     btt6.setEnabled(false); btt6.setText("");
+        k = a;
         Intent ppp = new Intent(maingame.this, endofGame.class);
         switch (a){
             case 1:
@@ -680,6 +691,7 @@ public class maingame extends AppCompatActivity {
                         "Отстрелялись на «отлично». Никто так и не заметил, что вы сделали на\n" +
                         "один выстрел меньше, чем должны были.\n");
                 btt1.setEnabled(true); btt1.setText("Вы возвращаетесь на плац -2");
+                imgAmmo.setVisibility(View.VISIBLE);
                 break;
             case 64:
                 txt.setText("Перед вами два склада. Продовольственный и вещевой");
