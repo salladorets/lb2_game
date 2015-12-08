@@ -71,6 +71,7 @@ public class maingame extends AppCompatActivity {
    // {
       //  imgList.setVisibility(View.INVISIBLE);
    // }
+
     public void game(int a) {
     btt1.setEnabled(false); btt1.setText("");
     btt2.setEnabled(false); btt2.setText("");
@@ -79,7 +80,7 @@ public class maingame extends AppCompatActivity {
     btt5.setEnabled(false); btt5.setText("");
     btt6.setEnabled(false); btt6.setText("");
         k = a;
-        Intent ppp = new Intent(maingame.this, endofGame.class);
+
         switch (a){
             case 1:
                 txt.setText("Только что закончилось построение, и командир роты объявил\n" +
@@ -262,7 +263,14 @@ public class maingame extends AppCompatActivity {
                         "Теперь вашу судьбу будет решать суд. Но скорее всего следующие\n" +
                         "несколько лет вам придется провести в дисциплинарном батальоне. Дай Бог,\n" +
                         "чтобы ваша девушка вас оттуда дождалась.\n");
-                startActivity(ppp);
+                btt1.setEnabled(true); btt1.setText("The end");
+                btt1.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent ppp = new Intent(maingame.this, endofGame.class);
+                        startActivity(ppp);
+                    }
+                });
                 break;
             case 14:
                 txt.setText("Вы делаете еще один шаг в сторону часового. Он направляет ствол\n" +
@@ -285,7 +293,14 @@ public class maingame extends AppCompatActivity {
                         "Часовой действовал строго в рамках закона и теперь будет поощрен\n" +
                         "командованием. Конечно, этому будет предшествовать серьезное\n" +
                         "разбирательство. Но вас оно уже не коснется.\n\n");
-                startActivity(ppp);
+                btt1.setEnabled(true); btt1.setText("The end");
+                btt1.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent ppp = new Intent(maingame.this, endofGame.class);
+                        startActivity(ppp);
+                    }
+                });
                 break;
             case 16:
                 txt.setText("Лишь только вы занесли ногу над ограждением и собрались перелезать\n" +
@@ -496,7 +511,14 @@ public class maingame extends AppCompatActivity {
                         "заслужили это увольнение в город.\n" +
                         "Девушка уже ждет вас в назначенном месте. Вперед! На встречу к\n" +
                         "своей любимой!\n");
-                startActivity(ppp);
+                btt1.setEnabled(true); btt1.setText("The end");
+                btt1.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent ppp = new Intent(maingame.this, endofGame.class);
+                        startActivity(ppp);
+                    }
+                });
                 break;
             case 38:
                 txt.setText("Дежурный по столовой согласен дать вам мешок картошки. Но он\n" +
@@ -857,7 +879,14 @@ public class maingame extends AppCompatActivity {
                         "самое лучшее, что вас ждет это несколько лет дисциплинарного батальона.\n" +
                         "Хорошо, что если ваша девушка вас оттуда дождется.\n" +
                         "В любом случае игра для вас окончена.\n");
-                startActivity(ppp);
+                btt1.setEnabled(true); btt1.setText("The end");
+                btt1.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent ppp = new Intent(maingame.this, endofGame.class);
+                        startActivity(ppp);
+                    }
+                });
                 break;
             case 79:
                 txt.setText("Вы делаете еще несколько шагов. Часовой стреляет в воздух.");
@@ -874,7 +903,13 @@ public class maingame extends AppCompatActivity {
                         "лечения вас ожидает суд. И в лучшем случае вы получите несколько лет\n" +
                         "дисциплинарного батальона. Хорошо, если ваша девушка дождется вас\n" +
                         "оттуда.\n");
-                startActivity(ppp);
+                btt1.setEnabled(true); btt1.setText("The end");
+                btt1.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {Intent ppp = new Intent(maingame.this, endofGame.class);
+                        startActivity(ppp);
+                    }
+                });
                 break;
             case 81:
                 txt.setText("Вы снова оказываетесь на развилке. Одна тропинка уходит налево, к\n" +
@@ -962,7 +997,13 @@ public class maingame extends AppCompatActivity {
                         "заслужили это увольнение в город.\n" +
                         "Девушка уже ждет вас в назначенном месте. Вперед! На встречу к\n" +
                         "своей любимой!\n");
-                startActivity(ppp);
+                btt1.setEnabled(true); btt1.setText("The end");
+                btt1.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {Intent ppp = new Intent(maingame.this, endofGame.class);
+                        startActivity(ppp);
+                    }
+                });
                 break;
             case 91:
                 txt.setText("Вы подходите к караульному помещению. Попасть на его территорию\n" +
@@ -1089,7 +1130,13 @@ public class maingame extends AppCompatActivity {
                         "Вы совершили серьезную ошибку, открыв огонь на поражение без\n" +
                         "предупреждения. Теперь вашу судьбу будет решать суд. В любом случае,\n" +
                         "игра для вас закончена.\n");
-                startActivity(ppp);
+                btt1.setEnabled(true); btt1.setText("The end");
+                btt1.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {Intent ppp = new Intent(maingame.this, endofGame.class);
+                        startActivity(ppp);
+                    }
+                });
                 break;
             case 102:
                 txt.setText("Вы нажимаете кнопку «тревога». Буквально через несколько минут на\n" +
