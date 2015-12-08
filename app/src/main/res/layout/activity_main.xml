@@ -16,7 +16,7 @@
         android:layout_centerHorizontal="true" />
 
     <ImageView
-        android:src="@drawable/Start"
+        android:src="@drawable/str"
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:id="@+id/imageView"
