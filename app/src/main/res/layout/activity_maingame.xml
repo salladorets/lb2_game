@@ -11,24 +11,27 @@
 
     <LinearLayout
         android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1">
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/paper">
 
         <ScrollView
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:id="@+id/scrollView"
-            android:background="@drawable/paper">
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            >
 
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="asas"
+                android:text="asaasasassasaasasassasaasasassasaasasassasaasasassasaasasassasasaasasassasaasasassasaasasassasaasasassasaasasassasaasasassasasaasasassasaasasassasaasasassasaasasassasaasasassasaasasassasasaasasassasaasasassasaasasassasaasasassasaasasassasaasasassasasaasasassasaasasassasaasasassasaasasassasaasasassasaasasassasasaasasassasaasasassasaasasassasaasasassasaasasassasaasasassasasaasasassasaasasassasaasasassasaasasassasaasasassasaasasaasasassasaasasassasaasasassasaasasassasaasasassasaasasassasasaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaassas"
                 android:id="@+id/txt"
                 android:layout_margin="33dp"
-                android:textColor="#ff3c00" />
+                android:textColor="#ffffff" />
         </ScrollView>
 
     </LinearLayout>
@@ -56,7 +59,7 @@
                     android:text="New Button"
                     android:id="@+id/btt1"
                     android:onClick="btt1_click"
-                    android:textColor="#ff3c00" />
+                    android:textColor="#ffffff" />
 
                 <Button
                     android:layout_width="fill_parent"
@@ -64,7 +67,7 @@
                     android:text="New Button"
                     android:id="@+id/btt2"
                     android:onClick="btt2_click"
-                    android:textColor="#ff3c00" />
+                    android:textColor="#ffffff" />
 
                 <Button
                     android:layout_width="fill_parent"
@@ -72,7 +75,7 @@
                     android:text="New Button"
                     android:id="@+id/btt3"
                     android:onClick="btt3_click"
-                    android:textColor="#ff3c00" />
+                    android:textColor="#ffffff" />
 
                 <Button
                     android:layout_width="fill_parent"
@@ -80,7 +83,7 @@
                     android:text="New Button"
                     android:id="@+id/btt4"
                     android:onClick="btt4_click"
-                    android:textColor="#ff3c00" />
+                    android:textColor="#ffffff" />
 
                 <Button
                     android:layout_width="fill_parent"
@@ -88,7 +91,7 @@
                     android:text="New Button"
                     android:id="@+id/btt5"
                     android:onClick="btt5_click"
-                    android:textColor="#ff3c00" />
+                    android:textColor="#ffffff" />
 
                 <Button
                     android:layout_width="fill_parent"
@@ -96,7 +99,7 @@
                     android:text="btt6"
                     android:id="@+id/btt6"
                     android:onClick="btt6_click"
-                    android:textColor="#ff3c00" />
+                    android:textColor="#ffffff" />
 
             </LinearLayout>
         </ScrollView>
