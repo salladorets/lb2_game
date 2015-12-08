@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(clk);
     }
     public void onClick_Start(View view){
-
+        Intent clk = new Intent(this, maingame.class);
+        startActivity(clk);
     }
 }
