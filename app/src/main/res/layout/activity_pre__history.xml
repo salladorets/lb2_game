@@ -25,7 +25,8 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:background="@drawable/paper">
 
         <ScrollView
             android:layout_width="wrap_content"
@@ -38,8 +39,7 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="@string/Pre_history"
                 android:id="@+id/textView2"
-                android:textColor="#ffffff"
-                android:background="@drawable/paper" />
+                android:textColor="#ffffff" />
         </ScrollView>
 
     </LinearLayout>
