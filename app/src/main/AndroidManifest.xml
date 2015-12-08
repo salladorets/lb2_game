@@ -17,6 +17,8 @@
         </activity>
         <activity android:name=".Pre_History" >
         </activity>
+        <activity android:name=".maingame">
+        </activity>
     </application>
 
 </manifest>
