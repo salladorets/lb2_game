@@ -12,7 +12,7 @@ public class maingame extends AppCompatActivity {
 
     TextView txt;
     Button btt1, btt2, btt3, btt4, btt5, btt6;
-    ImageButton imgList, imgAmmo;
+    ImageButton imgList, imgAmmo, imgPetlic, imgForm,imgKanist;
     int k = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,8 +27,14 @@ public class maingame extends AppCompatActivity {
         txt = (TextView) findViewById(R.id.txt);
         imgAmmo = (ImageButton) findViewById(R.id.imgAmmo);
         imgList = (ImageButton) findViewById(R.id.imgList);
+        imgForm = (ImageButton) findViewById(R.id.imgForm);
+        imgKanist = (ImageButton) findViewById(R.id.imgKanist);
+        imgPetlic = (ImageButton) findViewById(R.id.imgPetlic);
         imgAmmo.setVisibility(View.INVISIBLE);
         imgList.setVisibility(View.INVISIBLE);
+        imgForm.setVisibility(View.INVISIBLE);
+        imgKanist.setVisibility(View.INVISIBLE);
+        imgPetlic.setVisibility(View.INVISIBLE);
         game(1);
     }
     String[] time;
@@ -56,10 +62,15 @@ public class maingame extends AppCompatActivity {
         time = btt6.getText().toString().split("-");
         game(Integer.valueOf(time[1]));
     }
-    public void AmmoUse(View view){
-        imgAmmo.setVisibility(View.INVISIBLE);
-        game(k+12);
-    }
+    public void AmmoUse(View view){imgAmmo.setVisibility(View.INVISIBLE); game(k + 12); }
+    public void petlicUse(View view){imgPetlic.setVisibility(View.INVISIBLE); game(k + 3); }
+    public void formUse(View view){imgForm.setVisibility(View.INVISIBLE); game(k + 23); }
+    public void KanistUse(View view){imgKanist.setVisibility(View.INVISIBLE); game(k + 9); }
+    public void listUse(View view){imgList.setVisibility(View.INVISIBLE); game(k+9);}
+    //public void listUse(View view)
+   // {
+      //  imgList.setVisibility(View.INVISIBLE);
+   // }
     public void game(int a) {
     btt1.setEnabled(false); btt1.setText("");
     btt2.setEnabled(false); btt2.setText("");
@@ -395,6 +406,7 @@ public class maingame extends AppCompatActivity {
                         "общественном транспорте бабушкам уступать и т.д. и т.п.\n" +
                         "«Разрешите идти?». «Идите». Вы радостный выходите из здания штаба\n" +
                         "и возвращаетесь на плац.\n");
+                imgList.setVisibility(View.VISIBLE);
                 btt1.setEnabled(true); btt1.setText("Перейдите к шлаве -2");
                 break;
             case 29:
@@ -439,6 +451,7 @@ public class maingame extends AppCompatActivity {
                 btt1.setEnabled(true); btt1.setText("Вернетесь на плац -2");
                 btt2.setEnabled(true); btt2.setText("Зайдете в столовую -34");
                 btt3.setEnabled(true); btt3.setText("Вернетесь на предыдущую развилку -25");
+                imgPetlic.setVisibility(View.VISIBLE);
                 break;
             case 34:
                 txt.setText("После некоторых колебаний вы решаете зайти в столовую. Небольшое\n" +
@@ -599,6 +612,7 @@ public class maingame extends AppCompatActivity {
                         "Теперь для того, чтобы использовать канистру с бензином, вам нужно\n" +
                         "будет прибавить – 9 к номеру главы, в которой вы захотите это сделать.\n");
                 btt1.setEnabled(true); btt1.setText("Вы возвращаетесь на плац -2");
+                imgKanist.setVisibility(View.VISIBLE);
                 break;
             case 53:
                 txt.setText("Через некоторое время дорога раздваивается. Тропинка налево уходит\n" +
@@ -774,6 +788,7 @@ public class maingame extends AppCompatActivity {
                         "Теперь для того, чтобы использовать парадную форму, вам нужно\n" +
                         "прибавить – 23 к номеру главы, где вы захотите это сделать.\n");
                 btt1.setEnabled(true); btt1.setText("Вы возвращаетесь на плац -2");
+                imgForm.setVisibility(View.VISIBLE);
                 break;
             case 74:
                 txt.setText("Вы стучитесь в канцелярию, спрашиваете разрешения войти и, получив\n" +
@@ -1156,8 +1171,11 @@ public class maingame extends AppCompatActivity {
                 txt.setText("После караула вы приходите к командиру роты. Он объявляет вам\n" +
                         "благодарность за образцовое несение службы и вручает увольнительную\n" +
                         "записку на сутки. Это лучшая награда, о которой вы могли мечтать! Остается\n" +
-                        "только подписать ее у командира батальона.\n");
+                        "только подписать ее у командира батальона.\n" +
+                        "Для того, чтобы использовать увольнительную записку, прибавьте – 5 к\n" +
+                        "номеру главы, в которой вы захотите это сделать.\n");
                 btt1.setEnabled(true); btt1.setText("Вы возвращаетесь на плац -2");
+                imgList.setVisibility(View.VISIBLE);
                 break;
             case 112:
                 txt.setText("Вы что, в ногу себе собрались стрелять?!");

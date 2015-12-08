@@ -9,24 +9,52 @@
     android:orientation="vertical"
     android:background="@drawable/back">
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="50dp">
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:id="@+id/horizontalScrollView" >
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imgList"
-            android:src="@drawable/list" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imgAmmo"
-            android:src="@drawable/patron"
-            android:onClick="AmmoUse" />
-    </LinearLayout>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgList"
+                android:src="@drawable/list"
+                android:onClick="listUse" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgAmmo"
+                android:src="@drawable/patron"
+                android:onClick="AmmoUse" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgKanist"
+                android:src="@drawable/kanist"
+                android:onClick="KanistUse" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgForm"
+                android:src="@drawable/form"
+                android:onClick="formUse" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgPetlic"
+                android:src="@drawable/list"
+                android:onClick="petlicUse" />
+        </LinearLayout>
+    </HorizontalScrollView>
 
     <LinearLayout
         android:orientation="vertical"
