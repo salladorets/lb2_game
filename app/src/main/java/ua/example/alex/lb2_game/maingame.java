@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 public class maingame extends AppCompatActivity {
@@ -13,6 +14,7 @@ public class maingame extends AppCompatActivity {
     TextView txt;
     Button btt1, btt2, btt3, btt4, btt5, btt6;
     ImageButton imgList, imgAmmo, imgPetlic, imgForm,imgKanist;
+    ScrollView scroll;
     int k = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +27,7 @@ public class maingame extends AppCompatActivity {
         btt5 = (Button) findViewById(R.id.btt5);
         btt6 = (Button) findViewById(R.id.btt6);
         txt = (TextView) findViewById(R.id.txt);
+        scroll = (ScrollView) findViewById(R.id.scrollView2);
         imgAmmo = (ImageButton) findViewById(R.id.imgAmmo);
         imgList = (ImageButton) findViewById(R.id.imgList);
         imgForm = (ImageButton) findViewById(R.id.imgForm);
@@ -79,6 +82,7 @@ public class maingame extends AppCompatActivity {
     btt4.setEnabled(false); btt4.setText("");
     btt5.setEnabled(false); btt5.setText("");
     btt6.setEnabled(false); btt6.setText("");
+        scroll.scrollTo(0,0);
         k = a;
 
         switch (a){

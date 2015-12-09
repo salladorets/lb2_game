@@ -11,20 +11,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Добро пожаловать в часть,       солдат!"
+        android:text="Добро пожаловать в часть, солдат!"
         android:id="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
         android:textColor="#ff3c00"
-        android:textSize="25dp" />
+        android:textSize="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
 
     <ImageView
-        android:src="@drawable/main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageView"
+        android:background="@drawable/main"
         android:layout_below="@+id/textView"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentEnd="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -32,9 +32,9 @@
         android:text="Предистория"
         android:id="@+id/btn_Pre"
         android:onClick="onClick_Pre"
+        android:textColor="#ff3c00"
         android:layout_below="@+id/imageView"
-        android:layout_centerHorizontal="true"
-        android:textColor="#ff3c00" />
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
