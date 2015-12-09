@@ -109,7 +109,8 @@
                     android:text="New Button"
                     android:id="@+id/btt1"
                     android:onClick="btt1_click"
-                    android:textColor="#000000" />
+                    android:textColor="#000000"
+                    android:background="@drawable/bullet" />
 
                 <Button
                     android:layout_width="fill_parent"
@@ -117,7 +118,8 @@
                     android:text="New Button"
                     android:id="@+id/btt2"
                     android:onClick="btt2_click"
-                    android:textColor="#000000" />
+                    android:textColor="#000000"
+                    android:background="@drawable/bullet" />
 
                 <Button
                     android:layout_width="fill_parent"
@@ -125,7 +127,8 @@
                     android:text="New Button"
                     android:id="@+id/btt3"
                     android:onClick="btt3_click"
-                    android:textColor="#000000" />
+                    android:textColor="#000000"
+                    android:background="@drawable/bullet" />
 
                 <Button
                     android:layout_width="fill_parent"
@@ -133,7 +136,8 @@
                     android:text="New Button"
                     android:id="@+id/btt4"
                     android:onClick="btt4_click"
-                    android:textColor="#000000" />
+                    android:textColor="#000000"
+                    android:background="@drawable/bullet" />
 
                 <Button
                     android:layout_width="fill_parent"
@@ -141,7 +145,8 @@
                     android:text="New Button"
                     android:id="@+id/btt5"
                     android:onClick="btt5_click"
-                    android:textColor="#000000" />
+                    android:textColor="#000000"
+                    android:background="@drawable/bullet" />
 
                 <Button
                     android:layout_width="fill_parent"
@@ -149,7 +154,8 @@
                     android:text="btt6"
                     android:id="@+id/btt6"
                     android:onClick="btt6_click"
-                    android:textColor="#000000" />
+                    android:textColor="#000000"
+                    android:background="@drawable/bullet" />
 
             </LinearLayout>
         </ScrollView>

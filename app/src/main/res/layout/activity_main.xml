@@ -34,7 +34,8 @@
         android:onClick="onClick_Pre"
         android:textColor="#ff3c00"
         android:layout_below="@+id/imageView"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bullet" />
 
     <Button
         android:layout_width="wrap_content"
@@ -44,6 +45,7 @@
         android:layout_below="@+id/btn_Pre"
         android:layout_centerHorizontal="true"
         android:onClick="onClick_Start"
-        android:textColor="#ff3c00" />
+        android:textColor="#ff3c00"
+        android:background="@drawable/bullet" />
 
 </RelativeLayout>
