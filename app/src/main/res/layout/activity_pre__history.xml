@@ -31,8 +31,8 @@
         <ScrollView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
-            android:layout_marginTop="17dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="12dp"
             android:id="@+id/scrollView" >
 
             <TextView
@@ -41,8 +41,8 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="@string/Pre_history"
                 android:id="@+id/textView2"
-                android:layout_marginLeft="33dp"
-                android:layout_marginRight="33dp"
+                android:layout_marginLeft="49dp"
+                android:layout_marginRight="36dp"
                 android:textColor="#000000"/>
         </ScrollView>
 
