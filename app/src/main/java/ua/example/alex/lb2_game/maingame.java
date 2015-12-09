@@ -33,11 +33,11 @@ public class maingame extends AppCompatActivity {
         imgForm = (ImageButton) findViewById(R.id.imgForm);
         imgKanist = (ImageButton) findViewById(R.id.imgKanist);
         imgPetlic = (ImageButton) findViewById(R.id.imgPetlic);
-        imgAmmo.setVisibility(View.INVISIBLE);
-        imgList.setVisibility(View.INVISIBLE);
-        imgForm.setVisibility(View.INVISIBLE);
-        imgKanist.setVisibility(View.INVISIBLE);
-        imgPetlic.setVisibility(View.INVISIBLE);
+       // imgAmmo.setVisibility(View.INVISIBLE);
+        //imgList.setVisibility(View.INVISIBLE);
+        //imgForm.setVisibility(View.INVISIBLE);
+        //imgKanist.setVisibility(View.INVISIBLE);
+        //imgPetlic.setVisibility(View.INVISIBLE);
         game(1);
     }
     String[] time;

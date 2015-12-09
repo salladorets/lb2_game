@@ -20,39 +20,49 @@
             android:layout_height="match_parent">
 
             <ImageButton
-                android:layout_width="wrap_content"
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/imgList"
                 android:src="@drawable/list_bez"
-                android:onClick="listUse" />
+                android:onClick="listUse"
+                android:cropToPadding="true"
+                android:scaleType="fitCenter" />
 
             <ImageButton
-                android:layout_width="wrap_content"
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/imgAmmo"
                 android:src="@drawable/patron"
                 android:onClick="AmmoUse" />
 
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
                 android:id="@+id/imgKanist"
                 android:src="@drawable/kanist_bez"
-                android:onClick="KanistUse" />
+                android:onClick="KanistUse"
+                android:cropToPadding="false"
+                android:baselineAlignBottom="false"
+                android:adjustViewBounds="false"
+                android:scaleType="fitCenter" />
 
             <ImageButton
-                android:layout_width="wrap_content"
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/imgForm"
                 android:src="@drawable/form_bez"
-                android:onClick="formUse" />
+                android:onClick="formUse"
+                android:cropToPadding="false"
+                android:padding="0dp"
+                android:scaleType="fitCenter" />
 
             <ImageButton
-                android:layout_width="wrap_content"
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/imgPetlic"
                 android:src="@drawable/petlic_wf"
-                android:onClick="petlicUse" />
+                android:onClick="petlicUse"
+                android:scaleType="fitCenter" />
         </LinearLayout>
     </HorizontalScrollView>
 
